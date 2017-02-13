@@ -1716,8 +1716,14 @@ public class interfaz extends javax.swing.JFrame {
 
     private void buttonAction7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction7ActionPerformed
         if (tablaClientes.getSelectedRow() > -1) {
-            f.eliminarCliente((String) tablaClientes.getValueAt(tablaClientes.getSelectedRow(), 0));
-            this.tablaClientes.setModel(f.listarClientes());
+            if(JOptionPane.showConfirmDialog(null, "¿Seguro que desea eliminar?")==0){
+                f.eliminarCliente((String) tablaClientes.getValueAt(tablaClientes.getSelectedRow(), 0));
+                this.tablaClientes.setModel(f.listarClientes());
+                this.listaClientes.setModel(f.listClases(dniCliente));
+                   // textField.getDocument().addDocumentListener(new documentListener());
+
+            }
+            
         } else {
             JOptionPane.showMessageDialog(this, "Seleccione una fila");
         }
