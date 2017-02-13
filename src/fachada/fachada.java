@@ -45,6 +45,9 @@ public class fachada {
     public boolean eliminarCliente(String dni){
          return cliente.eliminarCliente(dni);
      }
+    public boolean modificarClienteTable(String dni, String nombre, String apellidos, String fecha, String direccion, int codPostal, String ciudad, int telefono, String correo){
+        return cliente.modificarClienteTable(dni, nombre, apellidos, fecha, direccion, codPostal, ciudad, telefono, correo);
+    }
      
      //-------Aministradores---------//
      

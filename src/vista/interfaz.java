@@ -703,6 +703,14 @@ public class interfaz extends javax.swing.JFrame {
                 tablaClientesMouseClicked(evt);
             }
         });
+        tablaClientes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                tablaClientesKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tablaClientesKeyReleased(evt);
+            }
+        });
         jScrollPane4.setViewportView(tablaClientes);
 
         listaClientes.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1742,6 +1750,33 @@ public class interfaz extends javax.swing.JFrame {
         this.txtAdminAdministradorCorreo.setText(a.getCorreo());
         
     }//GEN-LAST:event_listaAdminMouseClicked
+
+    private void tablaClientesKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tablaClientesKeyReleased
+        String dni=(String) tablaClientes.getValueAt(tablaClientes.getSelectedRow(), 0);
+        String nombre= (String) tablaClientes.getValueAt(tablaClientes.getSelectedRow(), 1);
+        
+        int num =1;
+        System.out.println("tecla presionada");
+        
+        f.modificarClienteTable(dni, nombre, nombre, nombre, nombre, 1, nombre, 1, nombre);
+        
+        this.tablaClientes.setModel(f.listarClientes());
+        
+        
+    }//GEN-LAST:event_tablaClientesKeyReleased
+
+    private void tablaClientesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tablaClientesKeyPressed
+       //Tabla AdminCliente boton suprimir para eliminar cliente keypressed
+        String dni=(String) tablaClientes.getValueAt(tablaClientes.getSelectedRow(), 0);
+        if(evt.getKeyCode()==KeyEvent.VK_DELETE){
+            
+            f.eliminarCliente(dni);
+            
+            
+            
+        
+        }
+    }//GEN-LAST:event_tablaClientesKeyPressed
 
     /**
      * @param args the command line arguments

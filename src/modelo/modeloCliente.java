@@ -152,6 +152,33 @@ public class modeloCliente extends conexion implements interfazCliente {
         }
         return res;
     }
+      @Override
+      public boolean modificarClienteTable(String dni, String nombre, String apellidos, String fecha, String direccion, int codPostal, String ciudad, int telefono, String correo){
+     boolean res=false;
+        
+        try {
+            CallableStatement cstm = this.getConexion().prepareCall("{call modificarCliente(?,?,?,?,?,?,?,?,?)}");
+            
+            cstm.setString(1, dni);
+            cstm.setString(2, nombre);
+            cstm.setString(3, apellidos);
+            cstm.setString(4, fecha);
+            cstm.setString(5, direccion);
+            cstm.setInt(6, codPostal);
+            cstm.setString(7, ciudad);
+            cstm.setInt(8, telefono);
+            cstm.setString(9, correo);
+            cstm.executeUpdate();
+            
+            cstm.close();
+            res=true;
+            
+        } catch (SQLException ex) {
+            System.out.println(ex.getCause());
+            System.out.println(ex.getMessage() + "     \n  " + ex.getSQLState());
+        }
+        return res;
+        }
 }
 
  
