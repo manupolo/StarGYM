@@ -1,0 +1,2185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JEditorPane" name="jEditorPane1">
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1140, 628]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="panelPrincipal" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="panelPrincipal" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="panelPrincipal">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panelLoguin">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="-2" width="1140" height="630"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              <Component id="labelMetric1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="txtLoguinUsuario" min="-2" pref="300" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="labelMetric2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="txtLoguinContraseña" min="-2" pref="300" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                              <Component id="btnLoguinEntrar" min="-2" pref="300" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="407" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="64" pref="64" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Component id="labelMetric1" min="-2" pref="32" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="txtLoguinUsuario" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelMetric2" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="txtLoguinContraseña" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Component id="btnLoguinEntrar" min="-2" pref="44" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/logo.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="org.edisoncor.gui.textField.TextFieldRound" name="txtLoguinUsuario">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="20" style="1"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="org.edisoncor.gui.passwordField.PasswordFieldRound" name="txtLoguinContrase&#xf1;a">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="20" style="1"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Usuario:"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="20" style="1"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="20" style="1"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="org.edisoncor.gui.button.ButtonAction" name="btnLoguinEntrar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Entrar"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="20" style="1"/>
+                </Property>
+                <Property name="main" type="boolean" value="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLoguinEntrarActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelAdmin">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="0" width="1140" height="-1"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Component id="labelMetric3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Component id="labelMetric4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnAdminRetroceso" min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="panelAdminCliente" min="-2" max="-2" attributes="0"/>
+                          <Component id="panelAdminAdmin" min="-2" max="-2" attributes="0"/>
+                          <Component id="panelAdminClase" min="-2" max="-2" attributes="0"/>
+                          <Component id="avatarAdmin" min="-2" pref="1140" max="-2" attributes="0"/>
+                          <Component id="panelAdminTrabajador" min="-2" max="-2" attributes="0"/>
+                          <Component id="panelAdminMaquina" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnAdminRetroceso" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelMetric3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMetric4" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="panelAdminCliente" min="-2" max="-2" attributes="0"/>
+                          <Component id="panelAdminAdmin" min="-2" max="-2" attributes="0"/>
+                          <Component id="panelAdminClase" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                              <Component id="avatarAdmin" min="-2" pref="596" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="panelAdminTrabajador" min="-2" max="-2" attributes="0"/>
+                          <Component id="panelAdminMaquina" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="org.edisoncor.gui.panel.PanelAvatarChooser" name="avatarAdmin">
+              <Properties>
+                <Property name="colorPrimario" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="avatarAdminKeyPressed"/>
+              </Events>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+              <SubComponents>
+                <Component class="org.edisoncor.gui.button.ButtonIpod" name="btnAdminIpod">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value=" "/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdminIpodActionPerformed"/>
+                  </Events>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                      <GridBagConstraints gridX="-1" gridY="-1" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelAdminAdmin">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="labelTask1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelTask1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jPanel1" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="157" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jPanel2" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+                                  <Component id="jPanel2" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JList" name="listaAdmin">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Item 1"/>
+                                <StringItem index="1" value="Item 2"/>
+                                <StringItem index="2" value="Item 3"/>
+                                <StringItem index="3" value="Item 4"/>
+                                <StringItem index="4" value="Item 5"/>
+                              </StringArray>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="listaAdminMouseClicked"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel2">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="0" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder>
+                              <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                            </LineBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelMetric5" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="labelMetric13" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric8" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="labelMetric14" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="txtAdminAdministradorDireccion" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric6" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorCodPostal" min="-2" pref="145" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="txtAdminAdministradorTelefono" min="-2" pref="223" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric15" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorCorreo" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="txtAdminAdministradorNombre" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric12" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorApellidos" min="-2" pref="352" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                                          <Component id="labelMetric9" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorNombre1" min="-2" pref="153" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                          <Component id="labelMetric16" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorApellidos1" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="133" max="32767" attributes="0"/>
+                                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="labelMetric5" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <EmptySpace pref="73" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtAdminAdministradorApellidos1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="labelMetric12" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorApellidos" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                          <Component id="txtAdminAdministradorNombre" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="labelMetric8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtAdminAdministradorCodPostal" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorDireccion" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="labelMetric14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorTelefono" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorCorreo" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel2" min="-2" pref="211" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric5">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="DATOS ADMINISTRADORES"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="22" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel2">
+                          <Properties>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/imagenes/logo205.png"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Container class="javax.swing.JPanel" name="jPanel4">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="c" green="c" red="c" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder>
+                                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="buttonAction1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="buttonAction3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="buttonAction4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="buttonAction5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="buttonAction1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="25" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction4">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Modificar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction5">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Eliminar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction1">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Nuevo"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction3">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Guardar"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric13">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Direccion:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric14">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Telefono:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorTelefono">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric8">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Nombre:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre">
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorDireccion">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric12">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Apellidos:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric6">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cod. Postal"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCodPostal">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric15">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Correo:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCorreo">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric9">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Dni:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre1">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric16">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos1">
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Component class="org.edisoncor.gui.label.LabelTask" name="labelTask1">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/admin42.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Administrador"/>
+                    <Property name="description" type="java.lang.String" value=" "/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelAdminCliente">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="labelTask2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelTask2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jPanel3" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="org.edisoncor.gui.label.LabelTask" name="labelTask2">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/admin42.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Cliente"/>
+                    <Property name="description" type="java.lang.String" value=" "/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JPanel" name="jPanel3">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel5" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel5" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="jPanel5">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="0" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder/>
+                          </Border>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelMetric7" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="labelMetric18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="txtAdminAdministradorDireccion1" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric19" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorApellidos2" min="-2" pref="169" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric11" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorCodPostal1" min="-2" pref="102" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="txtAdminAdministradorTelefono1" min="-2" pref="293" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="labelMetric20" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorCorreo1" min="-2" pref="410" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric21" min="-2" pref="42" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric22" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="txtAdminAdministradorApellidos3" min="-2" pref="214" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric10" min="-2" pref="97" max="-2" attributes="0"/>
+                                                  <EmptySpace pref="24" max="32767" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorNombre2" min="-2" pref="484" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="txtAdminAdministradorNombre3" min="-2" pref="181" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric23" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="fecha" min="-2" pref="177" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jScrollPane4" max="32767" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane5" min="-2" pref="160" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="labelMetric7" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <EmptySpace min="52" pref="83" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="txtAdminAdministradorNombre3" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="fecha" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="labelMetric23" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="txtAdminAdministradorNombre2" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorApellidos3" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Component id="labelMetric22" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric10" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="labelMetric17" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="labelMetric19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtAdminAdministradorDireccion1" min="-2" pref="24" max="-2" attributes="0"/>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                                          <Component id="labelMetric11" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Group type="103" groupAlignment="3" attributes="0">
+                                                          <Component id="labelMetric20" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="txtAdminAdministradorCorreo1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                                          <Component id="txtAdminAdministradorTelefono1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Component id="labelMetric18" max="32767" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="txtAdminAdministradorApellidos2" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorCodPostal1" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="jScrollPane4" pref="0" max="32767" attributes="0"/>
+                                              <Component id="jScrollPane5" pref="157" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric7">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="DATOS CLIENTES"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="22" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Container class="javax.swing.JPanel" name="jPanel6">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="c" green="c" red="c" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder>
+                                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="buttonAction2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="buttonAction6" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="buttonAction9" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="buttonAction8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="buttonAction7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="buttonAction10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="atras" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="buttonAction2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction6" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction7" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="atras" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace pref="31" max="32767" attributes="0"/>
+                                      <Component id="buttonAction10" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction2">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Nuevo"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAction2ActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction8">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Guardar"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAction8ActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction6">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Modificar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction7">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Eliminar"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAction7ActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction9">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Tarifas"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction10">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Matricula"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="atras">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Atr&#xe1;s"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="atrasActionPerformed"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric17">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Direccion:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric18">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Telefono:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorTelefono1">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric10">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Apellidos:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre2">
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorDireccion1">
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAdminAdministradorDireccion1ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric19">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Ciudad:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos2">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric11">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="C.P."/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCodPostal1">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric20">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Correo:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCorreo1">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric21">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Dni:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre3">
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAdminAdministradorNombre3ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric22">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Nombre:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos3">
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAdminAdministradorApellidos3ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric23">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="F. Nacimiento:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTable" name="tablaClientes">
+                              <Properties>
+                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                  <Table columnCount="4" rowCount="4">
+                                    <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                                  </Table>
+                                </Property>
+                                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                                  <TableColumnModel selectionModel="0">
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                  </TableColumnModel>
+                                </Property>
+                                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                                </Property>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tablaClientesMouseClicked"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JList" name="listaClientes">
+                              <Properties>
+                                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                                  <StringArray count="0"/>
+                                </Property>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="listaClientesMouseClicked"/>
+                              </Events>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                              </AuxValues>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="com.toedter.calendar.JDateChooser" name="fecha">
+                          <Properties>
+                            <Property name="dateFormatString" type="java.lang.String" value="yyyy-MM-dd"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelAdminTrabajador">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="labelTask3" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelTask3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jPanel7" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel7">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane6" min="-2" pref="157" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jPanel8" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane6" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel8" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JList" name="jList3">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Item 1"/>
+                                <StringItem index="1" value="Item 2"/>
+                                <StringItem index="2" value="Item 3"/>
+                                <StringItem index="3" value="Item 4"/>
+                                <StringItem index="4" value="Item 5"/>
+                              </StringArray>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel8">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="0" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder>
+                              <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                            </LineBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelMetric24" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="labelMetric25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric27" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="labelMetric26" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="txtAdminAdministradorDireccion2" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric29" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorCodPostal2" min="-2" pref="145" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="txtAdminAdministradorTelefono2" min="-2" pref="223" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric30" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorCorreo2" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="txtAdminAdministradorNombre4" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric28" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorApellidos5" min="-2" pref="352" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                                          <Component id="labelMetric31" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorNombre5" min="-2" pref="153" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                          <Component id="labelMetric32" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorApellidos6" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="133" max="32767" attributes="0"/>
+                                          <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="labelMetric24" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <EmptySpace pref="73" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtAdminAdministradorApellidos6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric32" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre5" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric31" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="labelMetric28" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorApellidos5" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                          <Component id="txtAdminAdministradorNombre4" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="labelMetric27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtAdminAdministradorCodPostal2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorDireccion2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric25" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="labelMetric26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorTelefono2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorCorreo2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                                          <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel3" min="-2" pref="211" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric24">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="DATOS TRABAJADORES"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="22" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel3">
+                          <Properties>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/imagenes/logo205.png"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Container class="javax.swing.JPanel" name="jPanel9">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="c" green="c" red="c" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder>
+                                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="buttonAction13" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="buttonAction14" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="buttonAction11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="buttonAction12" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="buttonAction13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="25" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction11">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Modificar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction12">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Eliminar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction13">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Nuevo"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction14">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Guardar"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric25">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Direccion:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric26">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Telefono:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorTelefono2">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric27">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Nombre:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre4">
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorDireccion2">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric28">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Apellidos:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos5">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric29">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cod. Postal"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCodPostal2">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric30">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Correo:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCorreo2">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric31">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Dni:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre5">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric32">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="19" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos6">
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Component class="org.edisoncor.gui.label.LabelTask" name="labelTask3">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/trabajador42.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Trabajador"/>
+                    <Property name="description" type="java.lang.String" value=" "/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelAdminMaquina">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="labelTask4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jPanel10" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelTask4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jPanel10" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel10">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel12" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="40" max="32767" attributes="0"/>
+                              <Component id="jPanel11" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jPanel12" max="32767" attributes="0"/>
+                                  <Component id="jPanel11" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="jPanel11">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="c" green="c" red="c" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder>
+                              <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                            </LineBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jPanel17" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="jScrollPane7" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="labelMetric38" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="labelMetric40" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric39" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="txtAdminAdministradorNombre12" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="txtAdminAdministradorNombre11" min="-2" pref="281" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="labelMetric41" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="txtAdminAdministradorNombre10" min="-2" pref="75" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                                  <Component id="labelMetric38" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane7" min="-2" pref="157" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="labelMetric39" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre11" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric41" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre10" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="labelMetric40" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre12" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jPanel17" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="jPanel17">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="c" green="c" red="c" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder>
+                                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="buttonAction33" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction34" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction31" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction32" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="buttonAction33" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction32" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction34" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction31" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction31">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Modificar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction32">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Eliminar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction33">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Nuevo"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction34">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Guardar"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTable" name="tablaMaquinas">
+                              <Properties>
+                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                  <Table columnCount="4" rowCount="4">
+                                    <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                                  </Table>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric38">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="MAQUINAS"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="20" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre10">
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric39">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Nombre:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric40">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Descripci&#xf3;n:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric41">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Precio:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre11">
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre12">
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel12">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="c" green="c" red="c" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder>
+                              <Color PropertyName="color" blue="0" green="cc" red="ff" type="rgb"/>
+                            </LineBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jScrollPane3" alignment="0" pref="523" max="32767" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="labelMetric35" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric37" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric34" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="txtAdminAdministradorNombre9" min="-2" pref="153" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="buttonIcon1" min="-2" pref="33" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtAdminAdministradorNombre7" max="32767" attributes="0"/>
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="txtAdminAdministradorNombre6" pref="281" max="32767" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="labelMetric36" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="txtAdminAdministradorNombre8" min="-2" pref="75" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jPanel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labelMetric33" alignment="1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace pref="56" max="32767" attributes="0"/>
+                                  <Component id="labelMetric33" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane3" min="-2" pref="157" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="labelMetric34" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric36" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre8" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="labelMetric35" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtAdminAdministradorNombre7" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtAdminAdministradorNombre9" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="labelMetric37" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonIcon1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                                  <Component id="jPanel13" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTable" name="tablaClases">
+                              <Properties>
+                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                  <Table columnCount="4" rowCount="4">
+                                    <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                                    <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                                  </Table>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric33">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="CLASES"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="20" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric34">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Nombre:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric35">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Descripci&#xf3;n:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric36">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Precio:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric37">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Monitor:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre6">
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre7">
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre8">
+                        </Component>
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre9">
+                        </Component>
+                        <Component class="org.edisoncor.gui.button.ButtonIcon" name="buttonIcon1">
+                          <Properties>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/imagenes/lupa24.png"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="buttonIcon1"/>
+                          </Properties>
+                        </Component>
+                        <Container class="javax.swing.JPanel" name="jPanel13">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="c" green="c" red="c" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder>
+                                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="buttonAction17" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction18" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction15" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction16" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="buttonAction17" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction18" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction15">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Modificar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction16">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Eliminar"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction17">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Nuevo"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction18">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Guardar"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Component class="org.edisoncor.gui.label.LabelTask" name="labelTask4">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/trabajador42.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Trabajador"/>
+                    <Property name="description" type="java.lang.String" value=" "/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelAdminClase">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="ff" red="99" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="1140" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="600" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Component class="org.edisoncor.gui.button.ButtonCircle" name="btnAdminRetroceso">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="buttonCircle1"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdminRetrocesoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Administrador:"/>
+              </Properties>
+            </Component>
+            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="xxxxxxxxx"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
