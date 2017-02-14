@@ -28,7 +28,6 @@ public class conexion {
          Class.forName("com.mysql.jdbc.Driver");
          //obtenemos la database (conexión)
          conn = DriverManager.getConnection( this.url, this.user , this.password ); 
-           System.out.println("Conexion con la Base de datos, esheee manu ishoo tu no seras no?");
       }catch(SQLException e){
          System.err.println( e.getMessage() );
       }catch(ClassNotFoundException e){
