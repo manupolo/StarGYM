@@ -110,17 +110,17 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         labelMetric35 = new org.edisoncor.gui.label.LabelMetric();
         labelMetric36 = new org.edisoncor.gui.label.LabelMetric();
         labelMetric37 = new org.edisoncor.gui.label.LabelMetric();
-        textField1 = new org.edisoncor.gui.textField.TextField();
-        textField2 = new org.edisoncor.gui.textField.TextField();
-        textField3 = new org.edisoncor.gui.textField.TextField();
-        textField4 = new org.edisoncor.gui.textField.TextField();
+        txtapellidosmonitor = new org.edisoncor.gui.textField.TextField();
+        txtdnimonitor = new org.edisoncor.gui.textField.TextField();
+        txttelefonomonitor = new org.edisoncor.gui.textField.TextField();
+        txtcorreomonitor = new org.edisoncor.gui.textField.TextField();
         labelMetric39 = new org.edisoncor.gui.label.LabelMetric();
         buttonAction21 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction22 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction23 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction24 = new org.edisoncor.gui.button.ButtonAction();
         labelMetric40 = new org.edisoncor.gui.label.LabelMetric();
-        textField5 = new org.edisoncor.gui.textField.TextField();
+        txtnombremonitor = new org.edisoncor.gui.textField.TextField();
         panelPrincipal = new javax.swing.JPanel();
         panelLoguin = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -392,6 +392,11 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         buttonAction22.setText("Eliminar");
 
         buttonAction23.setText("Añadir");
+        buttonAction23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAction23ActionPerformed(evt);
+            }
+        });
 
         buttonAction24.setText("Eliminar");
 
@@ -425,24 +430,24 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel15Layout.createSequentialGroup()
                             .addComponent(labelMetric36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(textField3, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txttelefonomonitor, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
                             .addComponent(labelMetric37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(textField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(txtcorreomonitor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel15Layout.createSequentialGroup()
                             .addComponent(labelMetric35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtapellidosmonitor, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addComponent(labelMetric34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(14, 14, 14)
-                        .addComponent(textField2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtdnimonitor, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(labelMetric40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(14, 14, 14)
-                        .addComponent(textField5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtnombremonitor, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
@@ -455,20 +460,20 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelMetric34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtdnimonitor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelMetric40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtnombremonitor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelMetric35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtapellidosmonitor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelMetric36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(labelMetric37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(textField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(textField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtcorreomonitor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txttelefonomonitor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(labelMetric36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2180,6 +2185,12 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         this.tbMonitores.setModel(f.listarMonitores());
     }//GEN-LAST:event_buttonIcon1ActionPerformed
 
+    private void buttonAction23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction23ActionPerformed
+        f.añadirMonitor(this.txtdnimonitor.getText(),this.txtnombremonitor.getText(), this.txtapellidosmonitor.getText(), Integer.parseInt(this.txttelefonomonitor.getText()), this.txtcorreomonitor.getText());
+        this.tbMonitores.setModel(f.listarMonitores());
+                
+    }//GEN-LAST:event_buttonAction23ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2361,11 +2372,6 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private javax.swing.JTable tablaClientes1;
     private javax.swing.JTable tablaMaquinas;
     private javax.swing.JTable tbMonitores;
-    private org.edisoncor.gui.textField.TextField textField1;
-    private org.edisoncor.gui.textField.TextField textField2;
-    private org.edisoncor.gui.textField.TextField textField3;
-    private org.edisoncor.gui.textField.TextField textField4;
-    private org.edisoncor.gui.textField.TextField textField5;
     private org.edisoncor.gui.textField.TextField txtAdminAdministradorApellidos;
     private org.edisoncor.gui.textField.TextField txtAdminAdministradorApellidos1;
     private org.edisoncor.gui.textField.TextField txtAdminAdministradorApellidos2;
@@ -2394,7 +2400,12 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private org.edisoncor.gui.textField.TextField txtAdminAdministradorTelefono2;
     private org.edisoncor.gui.passwordField.PasswordFieldRound txtLoguinContraseña;
     private org.edisoncor.gui.textField.TextFieldRound txtLoguinUsuario;
+    private org.edisoncor.gui.textField.TextField txtapellidosmonitor;
+    private org.edisoncor.gui.textField.TextField txtcorreomonitor;
+    private org.edisoncor.gui.textField.TextField txtdnimonitor;
     private org.edisoncor.gui.textField.TextFieldRound txtnombre;
+    private org.edisoncor.gui.textField.TextField txtnombremonitor;
+    private org.edisoncor.gui.textField.TextField txttelefonomonitor;
     // End of variables declaration//GEN-END:variables
 
     @Override

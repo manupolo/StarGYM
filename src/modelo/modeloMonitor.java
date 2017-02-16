@@ -67,7 +67,7 @@ public class modeloMonitor extends conexion implements interfazMonitor {
      boolean res=false;
         
         try {
-            CallableStatement cstm = this.getConexion().prepareCall("{call añadirCliente(?,?,?,?,?)}");
+            CallableStatement cstm = this.getConexion().prepareCall("{call añadirMonitor(?,?,?,?,?)}");
             
             cstm.setString(1, idMonitor);
             cstm.setString(2, nombre);
