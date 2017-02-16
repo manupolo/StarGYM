@@ -115,6 +115,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         textField3 = new org.edisoncor.gui.textField.TextField();
         textField4 = new org.edisoncor.gui.textField.TextField();
         labelMetric39 = new org.edisoncor.gui.label.LabelMetric();
+        buttonAction21 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction22 = new org.edisoncor.gui.button.ButtonAction();
         panelPrincipal = new javax.swing.JPanel();
         panelLoguin = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -381,6 +383,10 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         labelMetric39.setText("MONITORES");
         labelMetric39.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
 
+        buttonAction21.setText("Cancelar");
+
+        buttonAction22.setText("Aceptar");
+
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
@@ -388,9 +394,6 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(labelMetric39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -402,17 +405,24 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                                 .addComponent(labelMetric34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(14, 14, 14)
                                 .addComponent(textField2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(18, 18, 18)
+                        .addComponent(labelMetric35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(textField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(labelMetric35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(textField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addGap(34, 34, 34)
+                                .addGap(252, 252, 252)
                                 .addComponent(labelMetric37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(textField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                .addComponent(textField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addGap(128, 128, 128)
+                                .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
@@ -430,14 +440,16 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                     .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addComponent(labelMetric36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(labelMetric36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(labelMetric37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(textField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(textField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout diaAdminMaquinaMonitorLayout = new javax.swing.GroupLayout(diaAdminMaquinaMonitor.getContentPane());
@@ -833,6 +845,11 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         buttonAction9.setText("Mensualidad");
 
         buttonAction10.setText("Matricula");
+        buttonAction10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAction10ActionPerformed(evt);
+            }
+        });
 
         atras.setText("Atrás");
         atras.addActionListener(new java.awt.event.ActionListener() {
@@ -1070,8 +1087,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addGap(1, 1, 1)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(labelMetric23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(labelMetric23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtAdminAdministradorNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1554,6 +1571,11 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
 
         buttonIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/anadir24.png"))); // NOI18N
         buttonIcon1.setText("buttonIcon1");
+        buttonIcon1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon1ActionPerformed(evt);
+            }
+        });
 
         jPanel13.setBackground(new java.awt.Color(12, 12, 12));
         jPanel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
@@ -2119,6 +2141,20 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAdminAdministradorNombre5ActionPerformed
 
+    private void buttonAction10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction10ActionPerformed
+        //Admin Cliente boton para añadir o quitar clases de la matricula
+        diaAdminClienteTarifa.setLocationRelativeTo(panelPrincipal);
+        diaAdminClienteTarifa.setSize(387, 315);
+        diaAdminClienteTarifa.setVisible(true);
+    }//GEN-LAST:event_buttonAction10ActionPerformed
+
+    private void buttonIcon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon1ActionPerformed
+        //Admin maquinas boton para añadir monitor al registro
+        diaAdminMaquinaMonitor.setLocationRelativeTo(panelPrincipal);
+        diaAdminMaquinaMonitor.setSize(537, 395);
+        diaAdminMaquinaMonitor.setVisible(true);
+    }//GEN-LAST:event_buttonIcon1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2174,6 +2210,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private org.edisoncor.gui.button.ButtonAction buttonAction19;
     private org.edisoncor.gui.button.ButtonAction buttonAction2;
     private org.edisoncor.gui.button.ButtonAction buttonAction20;
+    private org.edisoncor.gui.button.ButtonAction buttonAction21;
+    private org.edisoncor.gui.button.ButtonAction buttonAction22;
     private org.edisoncor.gui.button.ButtonAction buttonAction3;
     private org.edisoncor.gui.button.ButtonAction buttonAction31;
     private org.edisoncor.gui.button.ButtonAction buttonAction32;
