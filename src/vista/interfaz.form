@@ -91,7 +91,7 @@
                           <Component id="jScrollPane8" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="buttonAction19" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="buttonAction20" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -799,7 +799,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="107" max="32767" attributes="0"/>
+                                          <EmptySpace pref="133" max="32767" attributes="0"/>
                                           <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -812,7 +812,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="labelMetric5" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <EmptySpace pref="76" max="32767" attributes="0"/>
+                                  <EmptySpace pref="100" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="txtAdminAdministradorApellidos1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                                       <Component id="labelMetric16" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1227,7 +1227,7 @@
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="txtAdminAdministradorNombre3" min="-2" pref="181" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="labelMetric23" max="32767" attributes="0"/>
+                                                  <Component id="labelMetric23" pref="155" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
@@ -1242,7 +1242,7 @@
                                                   <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
                                                   <Component id="labelMetric42" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="textFieldRound1" min="-2" pref="222" max="-2" attributes="0"/>
+                                                  <Component id="txtnombre" min="-2" pref="222" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
@@ -1269,7 +1269,7 @@
                                   <Component id="labelMetric7" min="-2" pref="39" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace min="52" pref="82" max="32767" attributes="0"/>
+                                          <EmptySpace min="52" pref="117" max="32767" attributes="0"/>
                                           <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
@@ -1325,7 +1325,7 @@
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="labelMetric43" alignment="1" min="-2" max="-2" attributes="0"/>
                                               <Component id="labelMetric42" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="textFieldRound1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtnombre" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -1688,7 +1688,7 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextFieldRound" name="textFieldRound1">
+                        <Component class="org.edisoncor.gui.textField.TextFieldRound" name="txtnombre">
                         </Component>
                         <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric43">
                           <Properties>
@@ -1872,7 +1872,7 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                           <Component id="jScrollPane10" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <EmptySpace pref="200" max="32767" attributes="0"/>
                                           <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1885,7 +1885,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                   <Component id="labelMetric24" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <EmptySpace pref="50" max="32767" attributes="0"/>
+                                  <EmptySpace pref="74" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="passwordField1" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
@@ -2264,7 +2264,7 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jPanel12" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="22" max="32767" attributes="0"/>
+                              <EmptySpace pref="50" max="32767" attributes="0"/>
                               <Component id="jPanel11" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -2557,7 +2557,7 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="141" max="32767" attributes="0"/>
+                                  <EmptySpace pref="177" max="32767" attributes="0"/>
                                   <Component id="jPanel13" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
