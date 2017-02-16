@@ -105,7 +105,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         diaAdminMaquinaMonitor = new javax.swing.JDialog();
         jPanel15 = new javax.swing.JPanel();
         jScrollPane11 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tbMonitores = new javax.swing.JTable();
         labelMetric34 = new org.edisoncor.gui.label.LabelMetric();
         labelMetric35 = new org.edisoncor.gui.label.LabelMetric();
         labelMetric36 = new org.edisoncor.gui.label.LabelMetric();
@@ -117,6 +117,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         labelMetric39 = new org.edisoncor.gui.label.LabelMetric();
         buttonAction21 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction22 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction23 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction24 = new org.edisoncor.gui.button.ButtonAction();
         panelPrincipal = new javax.swing.JPanel();
         panelLoguin = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -358,7 +360,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
 
         jPanel15.setBackground(new java.awt.Color(0, 0, 0));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tbMonitores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -369,7 +371,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane11.setViewportView(jTable1);
+        jScrollPane11.setViewportView(tbMonitores);
 
         labelMetric34.setText("Nombre:");
 
@@ -386,6 +388,10 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         buttonAction21.setText("Cancelar");
 
         buttonAction22.setText("Aceptar");
+
+        buttonAction23.setText("Añadir");
+
+        buttonAction24.setText("Eliminar");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -411,17 +417,20 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                         .addComponent(textField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel15Layout.createSequentialGroup()
                                 .addGap(252, 252, 252)
                                 .addComponent(labelMetric37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(textField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addGap(128, 128, 128)
-                                .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(buttonAction23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(buttonAction24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -446,9 +455,11 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                         .addComponent(textField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(textField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -718,7 +729,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(labelMetric5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtAdminAdministradorApellidos1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelMetric16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -785,7 +796,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(panelAdminAdminLayout.createSequentialGroup()
                         .addComponent(labelTask1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 878, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         panelAdminAdminLayout.setVerticalGroup(
@@ -1046,7 +1057,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addComponent(txtAdminAdministradorNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(labelMetric23, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)))
+                                .addComponent(labelMetric23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1076,7 +1087,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                 .addComponent(labelMetric7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addGap(52, 117, Short.MAX_VALUE)
+                        .addGap(52, 82, Short.MAX_VALUE)
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(45, 45, 45)
@@ -1355,7 +1366,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(labelMetric24, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(passwordField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1684,7 +1695,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(comboBoxRound2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(buttonIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 177, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1696,7 +1707,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -2153,6 +2164,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         diaAdminMaquinaMonitor.setLocationRelativeTo(panelPrincipal);
         diaAdminMaquinaMonitor.setSize(537, 395);
         diaAdminMaquinaMonitor.setVisible(true);
+        this.tbMonitores.setModel(f.listarMonitores());
     }//GEN-LAST:event_buttonIcon1ActionPerformed
 
     /**
@@ -2212,6 +2224,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private org.edisoncor.gui.button.ButtonAction buttonAction20;
     private org.edisoncor.gui.button.ButtonAction buttonAction21;
     private org.edisoncor.gui.button.ButtonAction buttonAction22;
+    private org.edisoncor.gui.button.ButtonAction buttonAction23;
+    private org.edisoncor.gui.button.ButtonAction buttonAction24;
     private org.edisoncor.gui.button.ButtonAction buttonAction3;
     private org.edisoncor.gui.button.ButtonAction buttonAction31;
     private org.edisoncor.gui.button.ButtonAction buttonAction32;
@@ -2264,7 +2278,6 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JTable jTable1;
     private org.edisoncor.gui.label.LabelMetric labelMetric1;
     private org.edisoncor.gui.label.LabelMetric labelMetric10;
     private org.edisoncor.gui.label.LabelMetric labelMetric11;
@@ -2333,6 +2346,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private javax.swing.JTable tablaClientes;
     private javax.swing.JTable tablaClientes1;
     private javax.swing.JTable tablaMaquinas;
+    private javax.swing.JTable tbMonitores;
     private org.edisoncor.gui.textField.TextField textField1;
     private org.edisoncor.gui.textField.TextField textField2;
     private org.edisoncor.gui.textField.TextField textField3;

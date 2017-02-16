@@ -15,10 +15,12 @@ import modelo.interfazAdministrador;
 import modelo.interfazClase;
 import modelo.interfazCliente;
 import modelo.interfazMaquina;
+import modelo.interfazMonitor;
 import modelo.modeloAdministrador;
 import modelo.modeloClase;
 import modelo.modeloCliente;
 import modelo.modeloMaquina;
+import modelo.modeloMonitor;
 
 /**
  *
@@ -75,6 +77,17 @@ public class fachada {
      
      public DefaultTableModel listarMaquinas(){
          return maquina.listarMaquinas();
+     }
+     
+     //-------clases------------//
+     
+     private interfazMonitor monitor = new modeloMonitor();
+     
+     public DefaultTableModel listarMonitores(){
+         return monitor.listarMonitores();
+     }
+     public boolean añadirMonitor(String idMonitor, String nombre, String apellidos, int telefono, String correo){
+         return monitor.añadirMonitor(idMonitor, nombre, apellidos, telefono, correo);
      }
      
     
