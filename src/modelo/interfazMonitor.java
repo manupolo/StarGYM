@@ -14,5 +14,6 @@ import javax.swing.table.DefaultTableModel;
 public interface interfazMonitor {
     public DefaultTableModel listarMonitores();
     public boolean añadirMonitor(String idMonitor, String nombre, String apellidos, int telefono, String correo);
+    public boolean eliminarMonitor(String idMonitor2);
     
 }

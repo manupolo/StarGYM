@@ -86,9 +86,13 @@ public class fachada {
      public DefaultTableModel listarMonitores(){
          return monitor.listarMonitores();
      }
-     public boolean añadirMonitor(String idMonitor, String nombre, String apellidos, int telefono, String correo){
-         return monitor.añadirMonitor(idMonitor, nombre, apellidos, telefono, correo);
+      public boolean añadirMonitor(String idMonitor, String nombre, String apellidos, int telefono, String correo){
+          
+      return monitor.añadirMonitor(idMonitor, nombre, apellidos, telefono, correo);
      }
+      public boolean eliminarMonitor(String idMonitor2){
+          return monitor.eliminarMonitor(idMonitor2);
+      }
      
     
     

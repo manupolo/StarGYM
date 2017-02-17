@@ -62,6 +62,7 @@ public class modeloMonitor extends conexion implements interfazMonitor {
         return tablemodel;
         
     }
+    
     @Override
     public boolean añadirMonitor(String idMonitor, String nombre, String apellidos, int telefono, String correo){
      boolean res=false;
@@ -74,7 +75,9 @@ public class modeloMonitor extends conexion implements interfazMonitor {
             cstm.setString(3, apellidos);
             cstm.setInt(4, telefono);
             cstm.setString(5, correo);
-           
+            cstm.executeUpdate();
+            
+            cstm.close();
             res=true;
             
         } catch (SQLException ex) {
@@ -83,6 +86,26 @@ public class modeloMonitor extends conexion implements interfazMonitor {
         }
         return res;
         }
-     
     
-}
+    @Override
+    public boolean eliminarMonitor(String idMonitor2){
+        boolean res=false;
+        try {
+            //Preparamos la funcion que va a ejecutar la eliminacion
+            CallableStatement cstm = this.getConexion().prepareCall("{call eliminarMonitor(?)}");
+            //Indicas el tipo de dato que devuelve
+            //Indicas el parametro que le pasas, en este caso el codigo del bar y el dni
+            cstm.setString(1, idMonitor2);
+            //Ejecutas la funcion
+            cstm.executeUpdate();
+             //Recoges el resultado
+            cstm.close();
+            res=true;
+            
+            
+        } catch (Exception e) {
+        }
+        return res;
+    }
+    }
+

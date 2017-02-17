@@ -117,10 +117,10 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         labelMetric39 = new org.edisoncor.gui.label.LabelMetric();
         buttonAction21 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction22 = new org.edisoncor.gui.button.ButtonAction();
-        buttonAction23 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction24 = new org.edisoncor.gui.button.ButtonAction();
         labelMetric40 = new org.edisoncor.gui.label.LabelMetric();
         txtnombremonitor = new org.edisoncor.gui.textField.TextField();
+        jButton1 = new javax.swing.JButton();
         panelPrincipal = new javax.swing.JPanel();
         panelLoguin = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -390,17 +390,22 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         buttonAction21.setText("Aceptar");
 
         buttonAction22.setText("Eliminar");
-
-        buttonAction23.setText("Añadir");
-        buttonAction23.addActionListener(new java.awt.event.ActionListener() {
+        buttonAction22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonAction23ActionPerformed(evt);
+                buttonAction22ActionPerformed(evt);
             }
         });
 
         buttonAction24.setText("Eliminar");
 
         labelMetric40.setText("Nombre:");
+
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -414,8 +419,9 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addComponent(buttonAction23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(31, 31, 31)
+                                .addComponent(jButton1)
+                                .addGap(18, 18, 18)
                                 .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -478,8 +484,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonAction22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonAction21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonAction23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonAction24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonAction24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
                 .addContainerGap())
         );
 
@@ -2185,11 +2191,15 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         this.tbMonitores.setModel(f.listarMonitores());
     }//GEN-LAST:event_buttonIcon1ActionPerformed
 
-    private void buttonAction23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction23ActionPerformed
-        f.añadirMonitor(this.txtdnimonitor.getText(),this.txtnombremonitor.getText(), this.txtapellidosmonitor.getText(), Integer.parseInt(this.txttelefonomonitor.getText()), this.txtcorreomonitor.getText());
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        f.añadirMonitor(this.txtdnimonitor.getText(), this.txtnombremonitor.getText(), this.txtapellidosmonitor.getText(), Integer.parseInt(this.txttelefonomonitor.getText()), this.txtcorreomonitor.getText());
         this.tbMonitores.setModel(f.listarMonitores());
-                
-    }//GEN-LAST:event_buttonAction23ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void buttonAction22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction22ActionPerformed
+        f.eliminarCliente((String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 0) );
+        this.tbMonitores.setModel(f.listarMonitores());
+    }//GEN-LAST:event_buttonAction22ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2248,7 +2258,6 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private org.edisoncor.gui.button.ButtonAction buttonAction20;
     private org.edisoncor.gui.button.ButtonAction buttonAction21;
     private org.edisoncor.gui.button.ButtonAction buttonAction22;
-    private org.edisoncor.gui.button.ButtonAction buttonAction23;
     private org.edisoncor.gui.button.ButtonAction buttonAction24;
     private org.edisoncor.gui.button.ButtonAction buttonAction3;
     private org.edisoncor.gui.button.ButtonAction buttonAction31;
@@ -2269,6 +2278,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     private javax.swing.JDialog diaAdminClienteTarifa;
     private javax.swing.JDialog diaAdminMaquinaMonitor;
     private com.toedter.calendar.JDateChooser fecha;
+    private javax.swing.JButton jButton1;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
