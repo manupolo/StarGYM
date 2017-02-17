@@ -107,5 +107,29 @@ public class modeloMonitor extends conexion implements interfazMonitor {
         }
         return res;
     }
+    @Override
+    public boolean modificarMonitor(String idMonitor, String nombre, String apellidos, int telefono, String correo){
+        boolean res=false;
+        try {
+            CallableStatement cstm = this.getConexion().prepareCall("{call modificarMonitor(?,?,?,?,?)}");
+            
+            cstm.setString(1, idMonitor);
+            cstm.setString(2, nombre);
+            cstm.setString(3, apellidos);
+            cstm.setInt(4, telefono);
+            cstm.setString(5, correo);
+          
+            
+            cstm.executeUpdate();
+            
+            cstm.close();
+            res=true;
+            
+        } catch (SQLException ex) {
+            System.out.println(ex.getCause());
+            System.out.println(ex.getMessage() + "     \n  " + ex.getSQLState());
+        }
+        return res;
+    }
     }
 

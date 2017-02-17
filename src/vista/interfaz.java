@@ -373,6 +373,16 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tbMonitores.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tbMonitoresMouseClicked(evt);
+            }
+        });
+        tbMonitores.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tbMonitoresKeyReleased(evt);
+            }
+        });
         jScrollPane11.setViewportView(tbMonitores);
 
         labelMetric34.setText("Dni:");
@@ -1598,6 +1608,16 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tablaClases.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaClasesMouseClicked(evt);
+            }
+        });
+        tablaClases.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tablaClasesKeyReleased(evt);
+            }
+        });
         jScrollPane3.setViewportView(tablaClases);
 
         labelMetric33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1618,10 +1638,20 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         buttonAction15.setText("Modificar");
 
         buttonAction16.setText("Eliminar");
+        buttonAction16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAction16ActionPerformed(evt);
+            }
+        });
 
         buttonAction17.setText("Nuevo");
 
         buttonAction18.setText("Guardar");
+        buttonAction18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAction18ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -1920,6 +1950,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
             panelAdminTrabajador.setVisible(false);
             this.tablaClases.setModel(f.listarClases());
             this.tablaMaquinas.setModel(f.listarMaquinas());
+            this.comboBoxRound2.setModel(f.comboClases());
         }
         
         if(avatarAdmin.getSelectedtitulo().equals("Clases")){
@@ -2200,6 +2231,53 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         f.eliminarMonitor((String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 0) );
         this.tbMonitores.setModel(f.listarMonitores());
     }//GEN-LAST:event_buttonAction22ActionPerformed
+
+    private void tbMonitoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbMonitoresMouseClicked
+        this.txtdnimonitor.setText((String) this.tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 0));
+        this.txtnombremonitor.setText((String) this.tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 1));
+        this.txtapellidosmonitor.setText((String) this.tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 2));
+        this.txttelefonomonitor.setText((String) this.tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 3));
+        this.txtcorreomonitor.setText((String) this.tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 4));
+        
+    }//GEN-LAST:event_tbMonitoresMouseClicked
+
+    private void tbMonitoresKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tbMonitoresKeyReleased
+    String dni=(String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 0);
+    String nombre=(String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 1);
+    String apellidos=(String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 2);
+    String telefono=(String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 3);
+    String correo=(String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 4);
+    
+    f.modificarMonitor(dni, nombre, apellidos, Integer.parseInt(telefono), correo);
+    }//GEN-LAST:event_tbMonitoresKeyReleased
+
+    private void buttonAction18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction18ActionPerformed
+        f.añadirClase(this.txtAdminAdministradorNombre12.getText(), Double.parseDouble(this.txtAdminAdministradorNombre13.getText()), (String)this.comboBoxRound2.getSelectedItem());
+        this.tablaClases.setModel(f.listarClases());
+    }//GEN-LAST:event_buttonAction18ActionPerformed
+
+    private void buttonAction16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction16ActionPerformed
+        String id;
+        id= String.valueOf( this.tablaClases.getValueAt(tablaClases.getSelectedRow(), 0) ); 
+        f.eliminarClase(Integer.parseInt(id));
+        this.tablaClases.setModel(f.listarClases());
+    }//GEN-LAST:event_buttonAction16ActionPerformed
+
+    private void tablaClasesKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tablaClasesKeyReleased
+        String idClase=(String) tablaClases.getValueAt(tablaClases.getSelectedRow(), 0);
+        String nombre=(String) tablaClases.getValueAt(tablaClases.getSelectedRow(), 1);
+        String precio=(String) tablaClases.getValueAt(tablaClases.getSelectedRow(), 2);
+        String idMonitor=(String) tablaClases.getValueAt(tablaClases.getSelectedRow(), 3);
+        
+        f.modificarClase(Integer.parseInt(idClase), nombre, Double.parseDouble(precio), idMonitor);
+    }//GEN-LAST:event_tablaClasesKeyReleased
+
+    private void tablaClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaClasesMouseClicked
+        this.txtAdminAdministradorNombre12.setText((String) this.tablaClases.getValueAt(tablaClases.getSelectedRow(), 1));
+        this.txtAdminAdministradorNombre13.setText((String) this.tablaClases.getValueAt(tablaClases.getSelectedRow(), 2));
+        
+        
+    }//GEN-LAST:event_tablaClasesMouseClicked
 
     /**
      * @param args the command line arguments

@@ -9,6 +9,7 @@ import clases.Administrador;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
 import javax.swing.table.DefaultTableModel;
 import modelo.interfazAdministrador;
@@ -70,8 +71,23 @@ public class fachada {
     public DefaultTableModel listarClases(){
          return clase.listarClases();
      }
+    
+    public boolean añadirClase(String nombre, double precio, String idMonitor){
+        return clase.añadirClase(nombre, precio, idMonitor);
+    }
+    public DefaultComboBoxModel comboClases(){
+        return clase.comboClases();
+    }
+     public boolean eliminarClase(int idClase){
+         return clase.eliminarClase(idClase);
+     }
+      public boolean modificarClase(int idClase, String nombre, double precio, String idMonitor){
+          return clase.modificarClase(idClase, nombre, precio, idMonitor);
+      }
+    
+    
      
-     //---------maquinas--------------//
+     //---------maquina--------------//
      
      private interfazMaquina maquina = new modeloMaquina();
      
@@ -79,7 +95,7 @@ public class fachada {
          return maquina.listarMaquinas();
      }
      
-     //-------clases------------//
+     //-------monitores------------//
      
      private interfazMonitor monitor = new modeloMonitor();
      
@@ -92,6 +108,10 @@ public class fachada {
      }
       public boolean eliminarMonitor(String idMonitor2){
           return monitor.eliminarMonitor(idMonitor2);
+          
+        }
+      public boolean modificarMonitor(String idMonitor, String nombre, String apellidos, int telefono, String correo){
+          return monitor.modificarMonitor(idMonitor, nombre, apellidos, telefono, correo);
       }
      
     

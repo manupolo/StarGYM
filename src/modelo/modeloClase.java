@@ -6,8 +6,10 @@
 package modelo;
 
 import java.sql.CallableStatement;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -58,4 +60,88 @@ public class modeloClase extends conexion implements interfazClase {
         return tablemodel;
         
     }
+    @Override
+    public boolean añadirClase(String nombre, double precio, String idMonitor){
+     boolean res=false;
+        
+        try {
+            CallableStatement cstm = this.getConexion().prepareCall("{call añadirClase(?,?,?)}");
+            
+            cstm.setString(1, nombre);
+            cstm.setDouble(2, precio);
+            cstm.setString(3, idMonitor);
+           
+            cstm.executeUpdate();
+            
+            cstm.close();
+            res=true;
+            
+        } catch (SQLException ex) {
+            System.out.println(ex.getCause());
+            System.out.println(ex.getMessage() + "     \n  " + ex.getSQLState());
+        }
+        return res;
+        }
+    @Override
+    public DefaultComboBoxModel comboClases(){
+        DefaultComboBoxModel m = new DefaultComboBoxModel();
+        try{
+          PreparedStatement pstm = this.getConexion().prepareStatement("SELECT * FROM monitores");
+          ResultSet res = pstm.executeQuery();
+          
+          while(res.next()){
+              m.addElement(res.getString("idMonitor"));
+              
+          }
+        }catch(SQLException e){
+            e.printStackTrace();
+            
+        }
+        return m;
+    }
+    @Override
+    public boolean eliminarClase(int idClase2){
+        boolean res=false;
+        try {
+            //Preparamos la funcion que va a ejecutar la eliminacion
+            CallableStatement cstm = this.getConexion().prepareCall("{call eliminarClase(?)}");
+            //Indicas el tipo de dato que devuelve
+            //Indicas el parametro que le pasas, en este caso el codigo del bar y el dni
+            cstm.setInt(1, idClase2);
+            //Ejecutas la funcion
+            cstm.executeUpdate();
+             //Recoges el resultado
+            cstm.close();
+            res=true;
+            
+            
+        } catch (Exception e) {
+        }
+        return res;
+    }
+    @Override
+    public boolean modificarClase(int idClase, String nombre, double precio, String idMonitor){
+        boolean res=false;
+        try {
+            CallableStatement cstm = this.getConexion().prepareCall("{call modificarClase(?,?,?,?)}");
+            
+            cstm.setInt(1, idClase);
+            cstm.setString(2, nombre);
+            cstm.setDouble(3, precio);
+            cstm.setString(4, idMonitor);
+            
+          
+            
+            cstm.executeUpdate();
+            
+            cstm.close();
+            res=true;
+            
+        } catch (SQLException ex) {
+            System.out.println(ex.getCause());
+            System.out.println(ex.getMessage() + "     \n  " + ex.getSQLState());
+        }
+        return res;
+    }
+    
 }
