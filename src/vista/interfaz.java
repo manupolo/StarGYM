@@ -2197,7 +2197,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void buttonAction22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction22ActionPerformed
-        f.eliminarCliente((String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 0) );
+        f.eliminarMonitor((String) tbMonitores.getValueAt(tbMonitores.getSelectedRow(), 0) );
         this.tbMonitores.setModel(f.listarMonitores());
     }//GEN-LAST:event_buttonAction22ActionPerformed
 
