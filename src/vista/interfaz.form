@@ -1504,12 +1504,15 @@
                             </Component>
                             <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction9">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Mensualidad"/>
+                                <Property name="text" type="java.lang.String" value="Matricula"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAction9ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction10">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="Matricula"/>
+                                <Property name="text" type="java.lang.String" value="Clases"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAction10ActionPerformed"/>

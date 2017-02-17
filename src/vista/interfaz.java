@@ -18,12 +18,19 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.view.JasperViewer;
 import org.edisoncor.gui.util.Avatar;
 
 /**
@@ -890,9 +897,14 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener{
             }
         });
 
-        buttonAction9.setText("Mensualidad");
+        buttonAction9.setText("Matricula");
+        buttonAction9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAction9ActionPerformed(evt);
+            }
+        });
 
-        buttonAction10.setText("Matricula");
+        buttonAction10.setText("Clases");
         buttonAction10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonAction10ActionPerformed(evt);
@@ -1892,21 +1904,29 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener{
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoguinEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoguinEntrarActionPerformed
-        if(f.iniciarSesion(this.txtLoguinUsuario.getText(), this.txtLoguinContraseña.getText())==1){
-         JOptionPane.showMessageDialog(null, "Datos correctos");
-        panelLoguin.setVisible(false);
-        avatarAdmin.setVisible(true);
-        panelAdmin.setVisible(true);
-        panelAdminAdmin.setVisible(false);
-        panelAdminClase.setVisible(false);
-        panelAdminCliente.setVisible(false);
-        panelAdminMaquina.setVisible(false);
-        panelAdminTrabajador.setVisible(false);
-        }else if(f.iniciarSesion(this.txtLoguinUsuario.getText(), this.txtLoguinContraseña.getText())==0){
+        //if(f.iniciarSesion(this.txtLoguinUsuario.getText(), this.txtLoguinContraseña.getText())==1){
+            //JOptionPane.showMessageDialog(null, "Datos correctos");
+            panelLoguin.setVisible(false);
+            avatarAdmin.setVisible(true);
+            panelAdmin.setVisible(true);
+            panelAdminAdmin.setVisible(false);
+            panelAdminClase.setVisible(false);
             panelAdminCliente.setVisible(false);
-        }else{
-            JOptionPane.showMessageDialog(null, "Datos incorrectos");
-        }
+            panelAdminMaquina.setVisible(false);
+            panelAdminTrabajador.setVisible(false);
+//        }else if(f.iniciarSesion(this.txtLoguinUsuario.getText(), this.txtLoguinContraseña.getText())==0){
+//            JOptionPane.showMessageDialog(null, "Datos correctos");
+//            panelLoguin.setVisible(false);
+//            avatarAdmin.setVisible(false);
+//            panelAdmin.setVisible(true);
+//            panelAdminAdmin.setVisible(false);
+//            panelAdminClase.setVisible(false);
+//            panelAdminCliente.setVisible(false);
+//            panelAdminMaquina.setVisible(false);
+//            panelAdminTrabajador.setVisible(false);
+//        }else{
+//            JOptionPane.showMessageDialog(null, "Datos incorrectos");
+//        }
     }//GEN-LAST:event_btnLoguinEntrarActionPerformed
 
     private void btnAdminIpodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminIpodActionPerformed
@@ -2288,6 +2308,20 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener{
         
         
     }//GEN-LAST:event_tablaClasesMouseClicked
+
+    private void buttonAction9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction9ActionPerformed
+        // Boton Admin Cliente Matricula
+        try {
+            String dir = "src/vista/matriculaCliente.jrxml";
+            JasperReport reporteJasper = JasperCompileManager.compileReport(dir);
+            JasperPrint mostrarReporte = JasperFillManager.fillReport(reporteJasper, null);
+            JasperViewer.viewReport(mostrarReporte);
+            
+        } catch (JRException e) {
+            Logger.getLogger(interfaz.class.getName()).log(Level.SEVERE, null, e);
+        }
+        
+    }//GEN-LAST:event_buttonAction9ActionPerformed
 
     /**
      * @param args the command line arguments
