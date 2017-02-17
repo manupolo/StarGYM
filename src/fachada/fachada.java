@@ -15,8 +15,10 @@ import javax.swing.table.DefaultTableModel;
 import modelo.interfazAdministrador;
 import modelo.interfazClase;
 import modelo.interfazCliente;
+import modelo.interfazLogin;
 import modelo.interfazMaquina;
 import modelo.interfazMonitor;
+import modelo.login;
 import modelo.modeloAdministrador;
 import modelo.modeloClase;
 import modelo.modeloCliente;
@@ -28,6 +30,14 @@ import modelo.modeloMonitor;
  * @author diego
  */
 public class fachada {
+    
+    //---------Login--------------//
+    
+    private interfazLogin login = new login();
+    
+    public int iniciarSesion(String Nombre, String Contraseña){
+        return login.iniciarSesion(Nombre, Contraseña);
+    }
     
     //--------Clientes---------------//
     

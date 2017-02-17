@@ -189,7 +189,7 @@ public class modeloCliente extends conexion implements interfazCliente {
       //obtenemos la cantidad de registros existentes en la tabla y se almacena en la variable "registros"
       //para formar la matriz de datos
       try{
-         PreparedStatement pstm = this.getConexion().prepareStatement( "SELECT count(*) as todo FROM cliente");
+         PreparedStatement pstm = this.getConexion().prepareStatement( "SELECT count(*) as todo FROM cliente where nombre like'"+nombre2+"%'");
          ResultSet res = pstm.executeQuery();
          res.next();
          registros = res.getInt("todo");

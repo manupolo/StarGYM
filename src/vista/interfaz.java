@@ -52,6 +52,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener{
         panelAdminMaquina.setVisible(false);
         panelAdminTrabajador.setVisible(false);
         
+        this.txtnombre.getDocument().addDocumentListener(this);
+        
       
         
     }
@@ -1890,7 +1892,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener{
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoguinEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoguinEntrarActionPerformed
-        //Boton Loguin
+        if(f.iniciarSesion(this.txtLoguinUsuario.getText(), this.txtLoguinContraseña.getText())==1){
+         JOptionPane.showMessageDialog(null, "Datos correctos");
         panelLoguin.setVisible(false);
         avatarAdmin.setVisible(true);
         panelAdmin.setVisible(true);
@@ -1899,6 +1902,11 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener{
         panelAdminCliente.setVisible(false);
         panelAdminMaquina.setVisible(false);
         panelAdminTrabajador.setVisible(false);
+        }else if(f.iniciarSesion(this.txtLoguinUsuario.getText(), this.txtLoguinContraseña.getText())==0){
+            panelAdminCliente.setVisible(false);
+        }else{
+            JOptionPane.showMessageDialog(null, "Datos incorrectos");
+        }
     }//GEN-LAST:event_btnLoguinEntrarActionPerformed
 
     private void btnAdminIpodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminIpodActionPerformed
@@ -2500,19 +2508,21 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener{
 
     @Override
     public void insertUpdate(DocumentEvent e) {
-        String nombre = this.txtnombre.getText();
+        String nombre= this.txtnombre.getText();
         this.tablaClientes.setModel(f.listarClientesLetra(nombre));
     }
 
     @Override
     public void removeUpdate(DocumentEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String nombre = this.txtnombre.getText();
+        this.tablaClientes.setModel(f.listarClientesLetra(nombre));
     }
 
     @Override
     public void changedUpdate(DocumentEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
 
     
 }
