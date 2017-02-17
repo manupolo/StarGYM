@@ -51,6 +51,9 @@ public class fachada {
     public boolean modificarClienteTable(String dni, String nombre, String apellidos, String fecha, String direccion, int codPostal, String ciudad, int telefono, String correo){
         return cliente.modificarClienteTable(dni, nombre, apellidos, fecha, direccion, codPostal, ciudad, telefono, correo);
     }
+    public DefaultTableModel listarClientesLetra(String nombre2){
+        return cliente.listarClientesLetra(nombre2);
+    }
      
      //-------Aministradores---------//
      

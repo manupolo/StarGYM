@@ -179,7 +179,59 @@ public class modeloCliente extends conexion implements interfazCliente {
         }
         return res;
         }
-}
+      @Override
+      public DefaultTableModel listarClientesLetra(String nombre2)
+    {
+      
+      DefaultTableModel tablemodel = new DefaultTableModel();
+      int registros = 0;
+      String[] columNames = {"DNI", "Nombre", "Apellidos", "Dirección", "Ciudad", "CodPostal", "Teléfono", "Nacimiento", "correo"};
+      //obtenemos la cantidad de registros existentes en la tabla y se almacena en la variable "registros"
+      //para formar la matriz de datos
+      try{
+         PreparedStatement pstm = this.getConexion().prepareStatement( "SELECT count(*) as todo FROM cliente");
+         ResultSet res = pstm.executeQuery();
+         res.next();
+         registros = res.getInt("todo");
+         res.close();
+      }catch(SQLException e){
+         System.err.println( e.getMessage() );
+      }
+    //se crea una matriz con tantas filas y columnas que necesite
+    Object[][] data = new String[registros][9];
+      try{
+          //realizamos la consulta sql y llenamos los datos en la matriz "Object[][] data"
+         PreparedStatement pstm = this.getConexion().prepareStatement("SELECT * FROM cliente where nombre like'"+nombre2+"%'");
+         ResultSet res = pstm.executeQuery();
+         int i=0;
+         while(res.next()){
+                
+                data[i][0] = res.getString("dni");
+                data[i][1] = res.getString("nombre");
+                data[i][2] = res.getString("apellidos");
+                data[i][3] = res.getString("direccion");
+                data[i][4] = res.getString("ciudad");
+                data[i][5] = res.getString("codPostal");
+                data[i][6] = res.getString("telefono");
+                data[i][7] = res.getString("fechaNacimiento");
+                data[i][8] = res.getString("correo");
+                    
+            i++;
+         }
+         res.close();
+         //se añade la matriz de datos en el DefaultTableModel
+         tablemodel.setDataVector(data, columNames );
+         }catch(SQLException e){
+            System.err.println( e.getMessage() );
+        }
+        return tablemodel;
+        
+    }
+        
+    }
+      
+      
+
 
  
 

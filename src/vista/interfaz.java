@@ -30,9 +30,10 @@ import org.edisoncor.gui.util.Avatar;
  *
  * @author Manuel
  */
-public class interfaz extends javax.swing.JFrame implements DocumentListener {
+public class interfaz extends javax.swing.JFrame implements DocumentListener{
     
     fachada f = new fachada();
+    
     
     
     
@@ -51,10 +52,10 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
         panelAdminMaquina.setVisible(false);
         panelAdminTrabajador.setVisible(false);
         
-        
-        
+      
         
     }
+    
     
     
 
@@ -2058,6 +2059,7 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
             panelAdminTrabajador.setVisible(false);
         }
         }
+        
     }//GEN-LAST:event_avatarAdminKeyPressed
 
     private void listaClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listaClientesMouseClicked
@@ -2498,10 +2500,8 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
 
     @Override
     public void insertUpdate(DocumentEvent e) {
-     String letra = this.txtnombre.getText(); // utilizar like
-     
-   
-   
+        String nombre = this.txtnombre.getText();
+        this.tablaClientes.setModel(f.listarClientesLetra(nombre));
     }
 
     @Override
@@ -2513,4 +2513,6 @@ public class interfaz extends javax.swing.JFrame implements DocumentListener {
     public void changedUpdate(DocumentEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    
 }
